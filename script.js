@@ -18,3 +18,16 @@ const players = document.getElementsByClassName("player");
 for (const player of players) {
     player.style.backgroundColor = "rgba(192,192,192,0.3)";
 }
+
+
+//৩. ওয়েবসাইট এর নিচে একটা ul list যোগ করো। সেখানে তোমার ইচ্ছামতো তিনটা আইটেম যোগ করো। তারপর ul এর নিচে একটা বাটন যোগ করো। এখন তোমার কাজ হবে। বাটনে যতবার ক্লিক করবে। ul এর মধ্যে নতুন একটা লিস্ট আইটেম যোগ হবে। 
+
+document.getElementById('list-btn').addEventListener('click', function () {
+    const listContainer = document.getElementById("list-container");
+    const listItem = document.createElement("li");
+    listItem.appendChild(document.createTextNode("new li item"));
+    listContainer.appendChild(listItem);
+
+});
+
+

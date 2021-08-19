@@ -31,3 +31,18 @@ document.getElementById('list-btn').addEventListener('click', function () {
 });
 
 
+//৪. এখন ul এর নিচে একটা ইনপুট ফিল্ড আর একটা বাটন যোগ করো। ইনপুট ফিল্ড এ শুরুতে মান হবে শূন্য (০)। তারপর ইনপুট ফিল্ডের পাশের নতুন বাটন এ যতবার প্রেস করবে ততবার এক এক করে ইনপুট ফিল্ড এর মান এক এক করে বাড়বে। 
+
+let displayNumberElement = document.getElementById("display").value = 0;
+
+
+document.getElementById('display-btn').addEventListener('click', function () {
+    // displayNumber.value = displayNumber.value + 1;
+    // console.log(displayNumber + 1);
+    let displayNumberElement = document.getElementById("display");
+    const displayNumberText = displayNumberElement.value;
+    const displayNumber = parseInt(displayNumberText);
+    displayNumberElement.value = displayNumber + 1;
+});
+
+
